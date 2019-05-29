@@ -1,0 +1,38 @@
+$px: 25;
+html,
+body {
+  height: 100%;
+}
+.app {
+  height: 100%;
+}
+.nav {
+  height: 48 / $px + rem;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12 / $px + rem;
+    color: #999;
+    .fa {
+      font-size: 22 / $px + rem;
+      color: #ccc;
+    }
+  }
+}
+
+.activeStyle{
+    color: #49AA34!important;
+    .fa{
+        color: #49AA34!important;
+    }
+}
