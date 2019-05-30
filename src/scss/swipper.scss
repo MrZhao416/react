@@ -1,0 +1,25 @@
+$px:25;
+html,
+body{
+  height: 100%;
+  width:100%;
+}
+#swiper{
+  width:100%;
+  height:164/$px+rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .swiper-container{
+    height:140/$px+rem;
+    display: block;
+    img{
+      height:100%;
+    }
+  }
+  .swiper-pagination{
+    margin-top: 140/$px+rem;
+    height:8.8/$px+rem;
+  }
+}
