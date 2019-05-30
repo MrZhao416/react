@@ -2,6 +2,7 @@ $px: 25;
 html,
 body {
   height: 100%;
+  background-color: #f2f2f2;
 }
 .app {
   height: 100%;
@@ -30,9 +31,261 @@ body {
   }
 }
 
-.activeStyle{
-    color: #49AA34!important;
-    .fa{
-        color: #49AA34!important;
+.activeStyle {
+  color: #49aa34 !important;
+  .fa {
+    color: #49aa34 !important;
+  }
+}
+
+.catagery_search {
+  width: 100%;
+  height: 49 / $px + rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 359 / $px + rem;
+    height: 32 / $px + rem;
+    border-radius: 15 / $px + rem;
+    background-color: #eee;
+    .fa {
+      font-size: 22 / $px + rem;
+      color: #ccc;
     }
+    span {
+      margin-left: 15 / $px + rem;
+      color: #ccc;
+      font-size: 14 / $px + rem;
+    }
+  }
+}
+
+#catagery {
+  .leftWrap {
+    overflow: auto;
+    height: 552 / $px + rem;
+    float: left;
+    .leftNav {
+      width: 96 / $px + rem;
+      li {
+        height: 46 / $px + rem;
+        background-color: #f2f2f2;
+        text-align: center;
+        line-height: 46 / $px + rem;
+        a {
+          color: #969696;
+        }
+      }
+    }
+  }
+
+  .rightView {
+    float: right;
+    width: 275 / $px + rem;
+    height: 552 / $px + rem;
+    padding: 0 10 / $px + rem;
+    overflow: auto;
+    background-color: #fff;
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 27 / $px + rem;
+      width: 100%;
+      margin-bottom: 16 / $px + rem;
+      .title {
+        font-size: 16 / $px + rem;
+      }
+      span {
+        span {
+          margin-right: 10 / $px + rem;
+          color: #ccc;
+        }
+        .fa {
+          color: #ccc;
+        }
+      }
+    }
+    .imgCon {
+      float: left;
+      width: 80 / $px + rem;
+      height: 90 / $px + rem;
+      padding: 0 6 / $px + rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16 / $px + rem;
+      font-size: 12 / $px + rem;
+      img {
+        width: 70 / $px + rem;
+      }
+    }
+  }
+}
+.self {
+  background-color: #f2f2f2;
+  height: 709 / $px + rem;
+  overflow: auto;
+  color: rgb(68, 60, 60);
+}
+.self-top {
+  height: 213 / $px + rem;
+  background: url("../img/topself.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-wrap {
+    display: flex;
+    justify-content: center;
+    width: 114 / $px + rem;
+    height: 44 / $px + rem;
+    background-color: #4cd964;
+    border-radius: 5 / $px + rem;
+    .login {
+      width: 48 / $px + rem;
+      height: 100%;
+      border: none;
+      padding: 0;
+      background-color: #4cd964;
+      color: #fff;
+      outline: none;
+      font-size: 16 / $px + rem;
+    }
+  }
+}
+
+.order {
+  height: 73 / $px + rem;
+  padding: 12 / $px + rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14 / $px + rem;
+    .iconfont {
+      font-size: 24 / $px + rem;
+    }
+  }
+}
+
+.money {
+  height: 82 / $px + rem;
+  margin: 16 / $px + rem 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  p {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14 / $px + rem;
+  }
+}
+.cls {
+  height: 82 / $px + rem;
+  padding: 16 / $px + rem 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  p {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14 / $px + rem;
+    .iconfont {
+      font-size: 24 / $px + rem;
+    }
+    .icon-qia {
+      color: rgba(0, 128, 0, 0.404);
+    }
+    .icon-kefu {
+      color: rgba(0, 0, 255, 0.349);
+    }
+    .icon-icon-test {
+      color: rgb(255, 255, 0);
+    }
+    .icon-shangwuhezuo {
+      color: rgba(0, 128, 0, 0.404);
+    }
+    .icon-chongzhi {
+      color: rgba(255, 0, 0, 0.534);
+    }
+    .icon-dizhi {
+      color: rgba(0, 0, 255, 0.349);
+    }
+    .icon-shoucang {
+      color: pink;
+    }
+    .icon-liulanjilu {
+      color: brown;
+    }
+    .icon-tongyongliangpiao {
+      color: rgb(88, 186, 211);
+    }
+  }
+}
+.searchView {
+  .top-search {
+    height: 56 / $px + rem;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 16 / $px + rem;
+    input {
+      width: 291 / $px + rem;
+      height: 32 / $px + rem;
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 10/$px+rem;
+      padding-left: 10/$px+rem; 
+    }
+    button {
+      width: 60 / $px + rem;
+      height: 32 / $px + rem;
+      border: none;
+      padding: 0;
+      background-color: #4CD964;
+      color: #fff;
+      border-radius: 10/$px+rem;
+      outline: none;
+    }
+  }
+  h2 {
+    height: 44 / $px + rem;
+    padding: 12 / $px + rem 0 8 / $px + rem 0;
+    margin-left: 12 / $px + rem;
+  }
+  ul {
+      height: 144/$px+rem;
+    li {
+      width: 30%;
+      height: 37 / $px + rem;
+      margin: 6/$px+rem;
+      padding: 0 /$px+rem;
+      float: left;
+      background-color: #fff;
+      line-height: 37 / $px + rem;
+      text-align: center;
+      font-size: 14/$px+rem;
+    }
+  }
 }

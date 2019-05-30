@@ -20,3 +20,6 @@ b,strong{
 i,em{
     font-style: normal;
 }
+*{
+    box-sizing: border-box;
+}

@@ -6,11 +6,11 @@ class Home extends Component {
     constructor(props) {
         super(props)
     }
-    componentDidMount(){
-        axios.get("https://api1.34580.com/wx/Products/BigCategoryRequest?sourcetype=9").then((res)=>{
-            console.log(res.data);
-        })
-    }
+    // componentDidMount(){
+    //     axios.get("https://api1.34580.com/wx/Products/BigCategoryRequest?sourcetype=9").then((res)=>{
+    //         console.log(res.data);
+    //     })
+    // }
     render() {
         console.log(this.props.home)
         return (

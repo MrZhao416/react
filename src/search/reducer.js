@@ -1,16 +1,12 @@
 var initState={
     list:[],
-    keyword:"",
-    tjlist:[]
+    keyword:[],
 }
 
 var reducer=(state=initState,action)=>{
     var newState={...state};
     if(action.type==='ADDLIST'){
         newState.list=action.list
-    }
-    if(action.type==='ADDTJLIST'){
-        newState.tjlist=action.tjlist
     }
     if(action.type==='GETKEYWORD'){
         newState.keyword=action.keyword
